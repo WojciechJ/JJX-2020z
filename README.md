@@ -3,9 +3,13 @@
 ## Warunki zaliczenia
 
 Projekt 1 (JAVA) - 40pkt
+
 Projekt 2 (JAVA) - 40pkt
+
 Zadanie 1 (XML) - 20pkt
+
 Zadanie 2 (XML) - 20pkt
+
 
 ## Projekt 1
 
