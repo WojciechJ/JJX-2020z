@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="wydzialy">
+  
+  <xs:complexType>
+    <xs:sequence>
+     <xs:element ref="wydzial" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="wydzial">
+    <xs:complexType>
+      <xs:sequence>
+      <xs:element name="nazwa_wydzial" minOccurs="1" maxOccurs="1" type="xs:string" />
+      <!-- wydział posiada nazwę oraz dowolną liczbę adresów -->
+      <xs:element name="adres_wydzial" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element ref="pracownicy" />
+      <xs:element ref="przedmioty" />
+      </xs:sequence>	
+      <!-- wydział ma unikalne id (xsd:ID) -->
+      <xs:attribute name="id"  type="xs:ID" use="required"/>	 
+    </xs:complexType> 
+  </xs:element>
+  
+  <xs:element name="pracownicy">
+  <!-- Pracowników należy wdrożyć jako typ złożony. -->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pracownik" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+      <!-- Pracowników należy wdrożyć jako typ złożony. -->
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="pracownik">
+  <xs:complexType>
+    <xs:sequence>
+    <!-- Pracowników należy wdrożyć jako typ złożony. -->
+    <!-- Imię i nazwisko pracowników jest obowiązkowe -->
+      <xs:element name="imie_pracownik" minOccurs="1" maxOccurs="1" type="xs:string"/>
+      <xs:element name="nazwisko_pracownik"  minOccurs="1" maxOccurs="1" type="xs:string"/>
+      <!-- tytuł nie jest konieczny -->
+      <xs:element name="tytul_pracownik" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+       <!-- Mamy do wyboru 3 kategorie pracowników: „naukowy”, „administracyjny” lub „techniczny”. -->
+      <xs:element name="kategoria_pracownik" minOccurs="0" maxOccurs="3">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="naukowy"/>
+            <xs:enumeration value="administracyjny"/>
+            <xs:enumeration value="techniczny"/>
+          </xs:restriction>
+        </xs:simpleType>  
+      </xs:element>
+      <!-- Każdy pracownik posiada adres.  -->
+      <!-- Pracownik musi mieć przypisany co najmniej jeden adres. -->
+      <xs:element ref="adres" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+        <xs:attribute name="idref" type="xs:IDREF" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="adres">
+  <!-- Adres musi być zaimplementowany jako typ złożony. -->
+    <xs:complexType>
+    <!-- Ulica, numer, kod pocztowy i miejscowość muszą być zapisywane w określonej kolejności. -->
+      <xs:sequence>
+        <xs:element name="ulica_adres" type="xs:string" />
+        <xs:element name="numer_adres" type="xs:integer" />
+        <xs:element name="kod_pocztowy_adres">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="6"/>
+              <xs:maxLength value="6"/>
+              <xs:pattern value="\d{2}-\d{3}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="miejscowosc_adres" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="przedmioty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="przedmiot" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>	
+  </xs:element>
+  
+  <xs:element name="przedmiot">
+  <xs:complexType>
+    <xs:all>
+    <!-- Ma także nazwę, opis oraz liczbę uczestników. -->
+      <xs:element name="nazwa_przedmiot" type="xs:string" />
+      <xs:element name="opis_przedmiot" type="xs:string" />
+      <!-- Przedmiot będzie nauczany przez co najmniej jednego pracownika -->
+      <xs:element name="prowadzacy_przedmiot">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="prowadzacy" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+		
+      <xs:element name="studenci">
+        <xs:complexType>
+          <xs:sequence>
+          <!-- Przedmiot będzie anulowany, jeśli zapisze się na niego mniej niż 6 studentów lub więcej niż 400 -->
+            <xs:element ref="student" minOccurs="6" maxOccurs="400" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+    <!-- Każdy przedmiot posiada unikalny kod przedmiotu. -->
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:complexType>
+  </xs:element>
+ 
+  <xs:element name="student">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="imie_student" type="xs:string" />
+      <xs:element name="nazwisko_student" type="xs:string" />
+      <xs:element name="indeks_student" type="xs:integer" /> 	  
+    </xs:all>
+    <xs:attribute name="id" use="required" type="xs:ID"/>
+  </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="prowadzacy">
+  <xs:complexType>
+  <!-- Należy zapewnić, że będzie to pracownik już zdefinowany (xsd:IDREF). -->
+      <xs:attribute name="idref" use="required" type="xs:IDREF" />
+  </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

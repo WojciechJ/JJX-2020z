@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wydzialy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wydzialy.xsd">
+  <wydzial id="wmipoz">
+    <nazwa_wydzial>Wydział Matematyki i Informatyki</nazwa_wydzial>
+    <adres_wydzial>Porznań</adres_wydzial>
+    <adres_wydzial>Morawsko</adres_wydzial>
+    <pracownicy id="pracownicy_0">
+
+        <pracownik id="pracownik_0">
+            <imie_pracownik>Jan</imie_pracownik>
+            <nazwisko_pracownik>Kowalski</nazwisko_pracownik>
+            <tytul_pracownik>Profesor</tytul_pracownik>
+            <kategoria_pracownik>naukowy</kategoria_pracownik>
+            <adres>
+                <ulica_adres>Słuchawkowa</ulica_adres>
+                <numer_adres>1234</numer_adres>
+                <kod_pocztowy_adres>12-123</kod_pocztowy_adres>
+                <miejscowosc_adres>Poznań</miejscowosc_adres>
+            </adres>
+        </pracownik>
+
+        <pracownik id="pracownik_1">
+            <imie_pracownik>Maria</imie_pracownik>
+            <nazwisko_pracownik>Nowak</nazwisko_pracownik>
+            <tytul_pracownik>magister</tytul_pracownik>
+            <kategoria_pracownik>administracyjny</kategoria_pracownik>
+            <adres>
+                <ulica_adres>Mikrofonowa</ulica_adres>
+                <numer_adres>4321</numer_adres>
+                <kod_pocztowy_adres>12-123</kod_pocztowy_adres>
+                <miejscowosc_adres>Poznań</miejscowosc_adres>
+            </adres>
+        </pracownik>
+
+    </pracownicy>
+
+    <przedmioty>
+
+      <przedmiot id="przedmiot_0">
+        <nazwa_przedmiot>Matematyka dyskretna</nazwa_przedmiot>
+        <opis_przedmiot>nauka o ...</opis_przedmiot>
+        <prowadzacy_przedmiot>
+          <prowadzacy idref="pracownik_0" />
+        </prowadzacy_przedmiot>
+        <studenci>
+          <student id="student_0">
+            <imie_student>Krystian</imie_student>
+            <nazwisko_student>Wkrętarka</nazwisko_student>
+            <indeks_student>426140</indeks_student>
+          </student>
+          <student id="student_1">
+            <imie_student>Mariusz</imie_student>
+            <nazwisko_student>Śróbokręt</nazwisko_student>
+            <indeks_student>426141</indeks_student>
+          </student>
+          <student id="student_2">
+            <imie_student>Monika</imie_student>
+            <nazwisko_student>Piła</nazwisko_student>
+            <indeks_student>426142</indeks_student>
+          </student>
+          <student id="student_3">
+            <imie_student>Aneta</imie_student>
+            <nazwisko_student>Młotek</nazwisko_student>
+            <indeks_student>426143</indeks_student>
+          </student>
+          <student id="student_4">
+            <imie_student>Karol</imie_student>
+            <nazwisko_student>Wyrzynarka</nazwisko_student>
+            <indeks_student>426144</indeks_student>
+          </student>
+          <student id="student_5">
+            <imie_student>Karolina</imie_student>
+            <nazwisko_student>Szlifierka</nazwisko_student>
+            <indeks_student>426145</indeks_student>
+          </student>
+        </studenci>
+      </przedmiot>
+
+      <przedmiot id="przedmiot_1">
+        <nazwa_przedmiot>Pracownia programowania</nazwa_przedmiot>
+        <opis_przedmiot>podstawy C</opis_przedmiot>
+        <prowadzacy_przedmiot>
+          <prowadzacy idref="pracownik_1" />
+        </prowadzacy_przedmiot>
+        <studenci>
+          <student id="student_6">
+            <imie_student>Krystian</imie_student>
+            <nazwisko_student>Wkrętarka</nazwisko_student>
+            <indeks_student>426140</indeks_student>
+          </student>
+          <student id="student_7">
+            <imie_student>Mariusz</imie_student>
+            <nazwisko_student>Śróbokręt</nazwisko_student>
+            <indeks_student>426141</indeks_student>
+          </student>
+          <student id="student_8">
+            <imie_student>Monika</imie_student>
+            <nazwisko_student>Piła</nazwisko_student>
+            <indeks_student>426142</indeks_student>
+          </student>
+          <student id="student_9">
+            <imie_student>Aneta</imie_student>
+            <nazwisko_student>Młotek</nazwisko_student>
+            <indeks_student>426143</indeks_student>
+          </student>
+          <student id="student_10">
+            <imie_student>Karol</imie_student>
+            <nazwisko_student>Wyrzynarka</nazwisko_student>
+            <indeks_student>426144</indeks_student>
+          </student>
+          <student id="student_11">
+            <imie_student>Karolina</imie_student>
+            <nazwisko_student>Szlifierka</nazwisko_student>
+            <indeks_student>426145</indeks_student>
+          </student>
+        </studenci>
+      </przedmiot>
+
+    </przedmioty>
+
+  </wydzial>
+
+  <wydzial id="wbpoz">
+    <nazwa_wydzial>Wydział Biologii</nazwa_wydzial>
+    <adres_wydzial>Porznań</adres_wydzial>
+    <adres_wydzial>Morawsko</adres_wydzial>
+    <pracownicy id="pracownicy_1">
+
+        <pracownik id="pracownik_2">
+            <imie_pracownik>Jan</imie_pracownik>
+            <nazwisko_pracownik>Kowalski</nazwisko_pracownik>
+            <tytul_pracownik>Profesor</tytul_pracownik>
+            <kategoria_pracownik>naukowy</kategoria_pracownik>
+            <adres>
+                <ulica_adres>Słuchawkowa</ulica_adres>
+                <numer_adres>1234</numer_adres>
+                <kod_pocztowy_adres>12-123</kod_pocztowy_adres>
+                <miejscowosc_adres>Poznań</miejscowosc_adres>
+            </adres>
+        </pracownik>
+
+        <pracownik id="pracownik_3">
+            <imie_pracownik>Maria</imie_pracownik>
+            <nazwisko_pracownik>Nowak</nazwisko_pracownik>
+            <tytul_pracownik>magister</tytul_pracownik>
+            <kategoria_pracownik>administracyjny</kategoria_pracownik>
+            <adres>
+                <ulica_adres>Mikrofonowa</ulica_adres>
+                <numer_adres>4321</numer_adres>
+                <kod_pocztowy_adres>12-123</kod_pocztowy_adres>
+                <miejscowosc_adres>Poznań</miejscowosc_adres>
+            </adres>
+        </pracownik>
+
+    </pracownicy>
+
+    <przedmioty>
+
+      <przedmiot id="przedmiot_2">
+        <nazwa_przedmiot>Matematyka dyskretna</nazwa_przedmiot>
+        <opis_przedmiot>nauka o ...</opis_przedmiot>
+        <prowadzacy_przedmiot>
+          <prowadzacy idref="pracownik_2" />
+        </prowadzacy_przedmiot>
+        <studenci>
+          <student id="student_12">
+            <imie_student>Krystian</imie_student>
+            <nazwisko_student>Wkrętarka</nazwisko_student>
+            <indeks_student>426140</indeks_student>
+          </student>
+          <student id="student_13">
+            <imie_student>Mariusz</imie_student>
+            <nazwisko_student>Śróbokręt</nazwisko_student>
+            <indeks_student>426141</indeks_student>
+          </student>
+          <student id="student_14">
+            <imie_student>Monika</imie_student>
+            <nazwisko_student>Piła</nazwisko_student>
+            <indeks_student>426142</indeks_student>
+          </student>
+          <student id="student_15">
+            <imie_student>Aneta</imie_student>
+            <nazwisko_student>Młotek</nazwisko_student>
+            <indeks_student>426143</indeks_student>
+          </student>
+          <student id="student_16">
+            <imie_student>Karol</imie_student>
+            <nazwisko_student>Wyrzynarka</nazwisko_student>
+            <indeks_student>426144</indeks_student>
+          </student>
+          <student id="student_17">
+            <imie_student>Karolina</imie_student>
+            <nazwisko_student>Szlifierka</nazwisko_student>
+            <indeks_student>426145</indeks_student>
+          </student>
+        </studenci>
+      </przedmiot>
+
+      <przedmiot id="przedmiot_3">
+        <nazwa_przedmiot>Pracownia programowania</nazwa_przedmiot>
+        <opis_przedmiot>podstawy C</opis_przedmiot>
+        <prowadzacy_przedmiot>
+          <prowadzacy idref="pracownik_3" />
+        </prowadzacy_przedmiot>
+        <studenci>
+          <student id="student_18">
+            <imie_student>Krystian</imie_student>
+            <nazwisko_student>Wkrętarka</nazwisko_student>
+            <indeks_student>426140</indeks_student>
+          </student>
+          <student id="student_19">
+            <imie_student>Mariusz</imie_student>
+            <nazwisko_student>Śróbokręt</nazwisko_student>
+            <indeks_student>426141</indeks_student>
+          </student>
+          <student id="student_20">
+            <imie_student>Monika</imie_student>
+            <nazwisko_student>Piła</nazwisko_student>
+            <indeks_student>426142</indeks_student>
+          </student>
+          <student id="student_21">
+            <imie_student>Aneta</imie_student>
+            <nazwisko_student>Młotek</nazwisko_student>
+            <indeks_student>426143</indeks_student>
+          </student>
+          <student id="student_22">
+            <imie_student>Karol</imie_student>
+            <nazwisko_student>Wyrzynarka</nazwisko_student>
+            <indeks_student>426144</indeks_student>
+          </student>
+          <student id="student_23">
+            <imie_student>Karolina</imie_student>
+            <nazwisko_student>Szlifierka</nazwisko_student>
+            <indeks_student>426145</indeks_student>
+          </student>
+        </studenci>
+      </przedmiot>
+
+    </przedmioty>
+
+  </wydzial>
+</wydzialy>

@@ -1,0 +1,419 @@
+<html lang="de-DE">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Wojciech Jagodziński 426145">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700" rel="stylesheet">
+    <title>Zadanie 2</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+
+        .container {
+            max-width: 1700px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+            box-sizing: border-box;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            border-radius: 25px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .poem {
+            width: 48%;
+            padding: 1rem;
+            margin: 1%;
+            max-height: 400px;
+            overflow: auto;
+            border: solid 1px #e4e0e0;
+            border-radius: 15px 0px 0px 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .verse {
+            white-space: nowrap;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .strophe {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #e4e0e0;
+            border-radius: 10px;
+        }
+
+        .bold {
+            font-weight: 700
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Zbiór wierszy</h1>
+
+        <div class="poem">
+
+            <h4><br><br>Rainer MariaRilke
+            </h4>
+
+            <h2>Der Panther</h2>
+
+            <h3>Im Jardin des Plantes, Paris</h3>
+
+            <div class="strophe">
+                <span class="verse">Sein Blick ist vom Vorübergehn der Stäbe</span>
+                <span class="verse">so müd geworden, daß er nichts mehr hält.</span>
+                <span class="verse">Ihm ist, als ob es tausend Stäbe gäbe</span>
+                <span class="verse"> und hinter tausend Stäben keine Welt.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Der weiche Gang geschmeidig starker Schritte,</span>
+                <span class="verse"> der sich im allerkleinsten Kreise dreht,</span>
+                <span class="verse"> ist wie ein Tanz von Kraft um eine Mitte,</span>
+                <span class="verse">in der betäubt ein großer Wille steht.</span>
+
+            </div>
+
+            <div class="strophe">
+                <span class="verse"> Nur manchmal schiebt der Vorhang der <span class="bold">Pupille</span></span>
+                <span class="verse">sich lautlos auf -. Dann geht ein Bild hinein,</span>
+                <span class="verse"> geht durch der <span class="bold">Glieder</span> angespannte Stille -</span>
+                <span class="verse">und hört im <span class="bold">Herzen</span> auf zu sein.</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="poem">
+
+            <h4><br><br>Johann Wolfgang von Goethe
+            </h4>
+
+            <h2>Der Zauberlehrling</h2>
+
+            <div class="strophe">
+                <span class="verse">Hat der alte Hexenmeister</span>
+                <span class="verse">Sich doch einmal wegbegeben!</span>
+                <span class="verse">Und nun sollen seine Geister</span>
+                <span class="verse">Auch nach meinem Willen leben.</span>
+                <span class="verse">Seine Wort und Werke</span>
+                <span class="verse">Merkt ich und den Brauch,</span>
+                <span class="verse">Und mit Geistesstärke</span>
+                <span class="verse">Tu ich Wunder auch.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Walle! walle</span>
+                <span class="verse">Manche Strecke,</span>
+                <span class="verse">Daß, zum Zwecke,</span>
+                <span class="verse">Wasser fließe</span>
+                <span class="verse">Und mit reichem, vollem Schwalle</span>
+                <span class="verse">Zu dem Bade sich ergieße.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und nun komm, du alter Besen,</span>
+                <span class="verse">Nimm die schlechten Lumpenhüllen!</span>
+                <span class="verse">Bist schon lange Knecht gewesen:</span>
+                <span class="verse">Nun erfülle meinen Willen!</span>
+                <span class="verse">Auf zwei <span class="bold">Beinen</span> stehe,</span>
+                <span class="verse">Oben sei ein Kopf,</span>
+                <span class="verse">Eile nun und gehe</span>
+                <span class="verse">Mit dem Wassertopf!</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Walle! walle</span>
+                <span class="verse">Manche Strecke,</span>
+                <span class="verse">Daß, zum Zwecke,</span>
+                <span class="verse">Wasser fließe</span>
+                <span class="verse">Und mit reichem, vollem Schwalle</span>
+                <span class="verse">Zu dem Bade sich ergieße.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Seht, er läuft zum Ufer nieder;</span>
+                <span class="verse">Wahrlich! ist schon an dem Flusse,</span>
+                <span class="verse">Und mit Blitzesschnelle wieder</span>
+                <span class="verse">Ist er hier mit raschem Gusse.</span>
+                <span class="verse">Schon zum zweiten Male!</span>
+                <span class="verse">Wie das Becken schwillt!</span>
+                <span class="verse">Wie sich jede Schale</span>
+                <span class="verse">Voll mit Wasser füllt!</span>
+                <span class="verse">Stehe! stehe!</span>
+                <span class="verse">Denn wir haben</span>
+                <span class="verse">Deiner Gaben</span>
+                <span class="verse">Vollgemessen! -</span>
+                <span class="verse">Ach, ich merk es! Wehe! wehe!</span>
+                <span class="verse">Hab ich doch das Wort vergessen!</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Ach, das Wort, worauf am Ende</span>
+                <span class="verse">Er das wird, was er gewesen.</span>
+                <span class="verse">Ach, er läuft und bringt behende!</span>
+                <span class="verse">Wärst du doch der alte Besen!</span>
+                <span class="verse">Immer neue Güsse</span>
+                <span class="verse">Bringt er schnell herein,</span>
+                <span class="verse">Ach! und hundert Flüsse</span>
+                <span class="verse">Stürzen auf mich ein!</span>
+                <span class="verse">Nein, nicht länger</span>
+                <span class="verse">Kann ich's lassen;</span>
+                <span class="verse">Will ihn fassen.</span>
+                <span class="verse">Das ist Tücke!</span>
+                <span class="verse">Ach, nun wird mir immer bänger!</span>
+                <span class="verse">Welche Miene! welche Blicke!</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">O du Ausgeburt der Hölle!</span>
+                <span class="verse">Soll das ganze Haus ersaufen?</span>
+                <span class="verse">Seh ich über jede Schwelle</span>
+                <span class="verse">Doch schon Wasserströme laufen.</span>
+                <span class="verse">Ein verruchter Besen,</span>
+                <span class="verse">Der nicht hören will!</span>
+                <span class="verse">Stock, der du gewesen,</span>
+                <span class="verse">Steh doch wieder still!</span>
+                <span class="verse">Willst's am Ende</span>
+                <span class="verse">Gar nicht lassen?</span>
+                <span class="verse">Will dich fassen,</span>
+                <span class="verse">Will dich halten</span>
+                <span class="verse">Und das alte Holz behende</span>
+                <span class="verse">Mit dem scharfen Beile spalten.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Seht, da kommt er schleppend wieder!</span>
+                <span class="verse">Wie ich mich nur auf dich werfe,</span>
+                <span class="verse">Gleich, o Kobold, liegst du nieder;</span>
+                <span class="verse">Krachend trifft die glatte Schärfe.</span>
+                <span class="verse">Wahrlich! brav getroffen!</span>
+                <span class="verse">Seht, er ist entzwei!</span>
+                <span class="verse">Und nun kann ich hoffen,</span>
+                <span class="verse">Und ich atme frei!</span>
+                <span class="verse">Wehe! wehe!</span>
+                <span class="verse">Beide Teile</span>
+                <span class="verse">Stehn in Eile</span>
+                <span class="verse">Schon als Knechte</span>
+                <span class="verse">Völlig fertig in die Höhe!</span>
+                <span class="verse">Helft mir, ach! ihr hohen Mächte!</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und sie laufen! Naß und nässer</span>
+                <span class="verse">Wird's im Saal und auf den Stufen.</span>
+                <span class="verse">Welch entsetzliches Gewässer!</span>
+                <span class="verse">Herr und Meister! hör mich rufen! -</span>
+                <span class="verse">Ach, da kommt der Meister!</span>
+                <span class="verse">Herr, die Not ist groß!</span>
+                <span class="verse">Die ich rief, die Geister,</span>
+                <span class="verse">Werd ich nun nicht los.</span>
+                <span class="verse">In die Ecke,</span>
+                <span class="verse">Besen! Besen!</span>
+                <span class="verse">Seid's gewesen.</span>
+                <span class="verse">Denn als Geister</span>
+                <span class="verse">Ruft euch nur, zu seinem Zwecke,</span>
+                <span class="verse">Erst hervor der alte Meister.</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="poem">
+
+            <h4><br><br>Berthold Brecht
+            </h4>
+
+            <h2>Die Moritat von Mackie Messer</h2>
+
+            <div class="strophe">
+                <span class="verse">Und der Haifisch, der hat <span class="bold">Zähne</span></span>
+                <span class="verse">Und die trägt er im <span class="bold">Gesicht</span></span>
+                <span class="verse">Und Macheath, der hat ein Messer</span>
+                <span class="verse">Doch das Messer sieht man nicht.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und es sind des Haifischs <span class="bold">Flossen</span></span>
+                <span class="verse">Rot, wenn dieser Blut vergiesst</span>
+                <span class="verse">Mackie Messer trägt'nen Handschuh</span>
+                <span class="verse">Drauf man keine Untat liest.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">An der Themse grünem Wasser</span>
+                <span class="verse">Fallen plötzlich Leute um</span>
+                <span class="verse">Es ist weder Pest noch Cholera</span>
+                <span class="verse">Doch es heisst: Mackie geht um.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">An'nem schönen blauen Sonntag</span>
+                <span class="verse">Liegt ein toter Mann am Strand</span>
+                <span class="verse">Und ein Mensch geht um die Ecke</span>
+                <span class="verse">Den man Mackie Messer nennt.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und Schmul Meier bleibt Versechwunden</span>
+                <span class="verse">Und so mancher reiche Mann</span>
+                <span class="verse">Und sein Geld hat Mackie Messer</span>
+                <span class="verse">Dem man nichts beweisen kann.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Jenny Towler ward gefunden</span>
+                <span class="verse">Mit'nem Messer in der <span class="bold">Brust</span></span>
+                <span class="verse">Und am Kai geht Mackie Messer</span>
+                <span class="verse">Der von allem nichts gewusst.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Wo ist Alfons gleich, der Fuhrherr?</span>
+                <span class="verse">Kommt das je ans Sonnenlicht?</span>
+                <span class="verse">Wer es immer wissen könnte</span>
+                <span class="verse">Mackie Messer weiss es nicht.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und das grosse Feuer in Soho</span>
+                <span class="verse">Sieben Kinder und ein Greis</span>
+                <span class="verse">In der Menge Mackie Messer, den</span>
+                <span class="verse">Man nicht fragt, und der nichts weiss.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Und die minderjähr'ge Witwe</span>
+                <span class="verse">Deren Namen jeder weiss</span>
+                <span class="verse">Wachte auf und war geschändet</span>
+                <span class="verse">Mackie welches war dein Preis?</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="poem">
+
+            <h4><br><br>Heinrich Christian WilhelmBusch
+            </h4>
+
+            <h2> Pst!</h2>
+
+            <div class="strophe">
+                <span class="verse">Es gibt ja leider Sachen und Geschichten,</span>
+                <span class="verse">Die reizend und pikant,</span>
+                <span class="verse">Nur werden sie von Tanten und von Nichten</span>
+                <span class="verse">Niemals genannt.</span>
+
+            </div>
+
+
+            <div class="strophe">
+                <span class="verse">Verehrter Freund, so sei denn nicht vermessen,</span>
+                <span class="verse">Sei zart und schweig auch du.</span>
+                <span class="verse">Bedenk: Man liebt den Käse wohl, indessen</span>
+                <span class="verse">Man deckt ihn zu.</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="poem">
+
+            <h4><br><br>Όμηρος
+            </h4>
+
+            <h2>Ιλιάδα</h2>
+
+            <div class="strophe">
+                <span class="verse">Μῆνιν ἄειδε, θεὰ, Πηληιάδεω Ἀχιλῆος</span>
+                <span class="verse">οὐλομένην, ἣ μυρί’ Ἀχαιοῖς ἄλγε’ ἔθηκε,</span>
+                <span class="verse">πολλὰς δ’ ἰφθίμους ψυχὰς Ἄϊδι προῒαψεν</span>
+                <span class="verse">ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν</span>
+                <span class="verse">οἰωνοῖσί τε πᾶσι• Διὸς δ’ ἐτελείετο βουλή</span>
+                <span class="verse">ἐξ οὗ δὴ τὰ πρῶτα διαστήτην ἐρίσαντε</span>
+                <span class="verse">Ἀτρεΐδης τε ἄναξ ἀνδρῶν καὶ δῖος Ἀχιλλεύς.</span>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
