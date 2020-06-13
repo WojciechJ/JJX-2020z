@@ -2,7 +2,7 @@
 
 ## Warunki zaliczenia
 
-Projekt 1 (JAVA) - 40pkt
+Projekt 1 (JAVA) - 20pkt
 
 Projekt 2 (JAVA) - 40pkt
 
